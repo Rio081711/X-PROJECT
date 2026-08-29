@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            background-image: url('background 2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 30px 15px;
+        }
+
+        .birthday-letter {
+            width: min(1100px, 95%);
+            min-height: 600px;
+            max-height: 85vh;
+
+            background: rgba(247, 6, 151, 0.6);
+
+            border-radius: 15px;
+
+            box-shadow:
+                1px 1px 35px rgba(241, 241, 241, 0.85);
+
+            padding: 30px 45px;
+
+            overflow-y: auto;
+
+            position: relative;
+            z-index: 2;
+        }
+
+        .birthday-letter h1 {
+            text-align: center;
+
+            color: #f3d4e2;
+
+            font-size: clamp(30px, 5vw, 48px);
+
+            font-weight: bold;
+
+            font-family: rage, cursive;
+
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .birthday-letter p {
+            color: #f3d4e2;
+
+            font-size: clamp(16px, 2.2vw, 25px);
+
+            line-height: 1.5;
+
+            margin-bottom: 20px;
+
+            font-family: 'Segoe Print',
+                         'Segoe Script',
+                         cursive;
+        }
+
+        .birthday-letter .signature {
+            font-size: clamp(18px, 2vw, 23px);
+
+            font-family: 'Script MT Bold',
+                         'Brush Script MT',
+                         cursive;
+
+            margin-top: -10px;
+        }
+
+        .flower {
+            position: fixed;
+
+            width: clamp(120px, 25vw, 350px);
+
+            height: auto;
+
+            bottom: 20px;
+            right: 20px;
+
+            transform: rotate(40deg);
+
+            z-index: 3;
+
+            pointer-events: none;
+        }
+
+        .back {
+            position: fixed;
+
+            bottom: 20px;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            padding: 10px 20px;
+
+            font-size: 16px;
+
+            background-color: #e83e8c;
+
+            color: #fff;
+
+            text-decoration: none;
+
+            border-radius: 5px;
+
+            z-index: 5;
+
+            transition: 0.3s;
+        }
+
+        .back:hover {
+            background-color: #c72c73;
+
+            transform: translateX(-50%) scale(1.05);
+        }
+
+        @media (max-width: 900px) {
+
+            body {
+                align-items: flex-start;
+
+                padding-top: 30px;
+                padding-bottom: 80px;
+            }
+
+            .birthday-letter {
+                width: 95%;
+
+                min-height: 550px;
+
+                max-height: 80vh;
+
+                padding: 25px 30px;
+            }
+
+            .flower {
+                width: 180px;
+
+                bottom: 10px;
+                right: -20px;
+
+                opacity: 0.8;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 20px 10px 80px;
+
+                align-items: flex-start;
+            }
+
+            .birthday-letter {
+                width: 100%;
+
+                min-height: auto;
+
+                max-height: 78vh;
+
+                padding: 20px;
+
+                border-radius: 12px;
+            }
+
+            .birthday-letter h1 {
+                font-size: 32px;
+
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+
+            .birthday-letter p {
+                font-size: 16px;
+
+                line-height: 1.6;
+            }
+
+            .birthday-letter .signature {
+                font-size: 19px;
+            }
+
+            .flower {
+                width: 120px;
+
+                bottom: 5px;
+                right: -25px;
+
+                opacity: 0.65;
+            }
+
+            .back {
+                bottom: 15px;
+
+                font-size: 14px;
+
+                padding: 9px 18px;
+            }
+        }
+
+
+     
+    </style>
+</head>
+
+<body>
+
+    <div class="birthday-letter">
+
+        <h1>Happy Birthday Adlin!</h1>
+
+        <p>
+            Happy birthday, Adlin! Wishing you a day filled with love,
+            laughter, and unforgettable memories. May this year bring you
+            endless joy and success. Enjoy your special day to the fullest!
+        </p>
+
+        <p>
+            This is just a simple gift for you. This is not enough for the
+            things you did for me. I'm writing this letter to say how much
+            you mean to me. You're not just a girl in my life since last year.
+            You mean the world to me, and you make my life so much better.
+        </p>
+
+        <p>
+            Even though we're not okay and we still haven't figured things
+            out, I'm sorry for all the times we fight. I didn't mean to hurt
+            you. It's just triggered me.
+        </p>
+
+        <p>
+            I'm sorry, Adlin. I'm still hoping na maging okay tayo and
+            malampasan natin 'tong pinagdadaanan natin ngayon.
+        </p>
+
+        <p>
+            Thank you for staying with me through the ups and downs of my
+            life. I'm really thankful for you.
+        </p>
+
+        <p>
+            Sorry if this is the only thing I can give to you on the day of
+            your birthday. I'll make it up to you sa Tuesday.
+        </p>
+
+        <p>
+            I love you so much, Adlin!
+        </p>
+
+        <p>
+            With love,
+        </p>
+
+        <p class="signature">
+            Your boyfriend
+        </p>
+
+    </div>
+
+    <img src="flower.png" alt="" class="flower">
+
+    <a href="bdaykrish.html" class="back">
+        Return
+    </a>
+
+</body>
+</html>
